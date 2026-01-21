@@ -2,7 +2,8 @@ import pytest
 import pytest 
 from product.models import Product
 
-# тест 1 проверяем создание продукта 
+# Тест 1: Проверяем создание продукта 
+@pytest.mark.django_db
 def test_product_creation():
     product = Product.objects.create(
         name = "Apples",
