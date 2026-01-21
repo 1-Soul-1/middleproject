@@ -8,3 +8,4 @@ def sample_product():
         name = "Test Product",
         price = 100.00,
         in_stock = True
+    )
