@@ -9,3 +9,9 @@ def sample_product():
         price = 100.00,
         in_stock = True
     )
+
+@pytest.fixture 
+def create_product():
+    def _create_product(name = "Create Product", price = 50):
+        return Product.objects.create(name = name, price = price)
+    return _create_product
