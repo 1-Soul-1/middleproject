@@ -1,4 +1,4 @@
-# создаём тестовую модель продукта 
+# Создаём тестовую модель продукта 
 import pytest 
 from product.models import Product
 
@@ -14,4 +14,4 @@ def sample_product():
 def create_product():
     def _create_product(name = "Create Product", price = 50):
         return Product.objects.create(name = name, price = price)
-    return _create_product
+    return _create_product 
